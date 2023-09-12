@@ -1,11 +1,11 @@
 process TNHaplotyper2
 {
     debug true
-    publishDir params.outdir,mode:'copy'
-    tag "${reads[0]},${reads[1]}"  
+    publishDir params.outdir, mode:'copy'
+    tag "${reads[0]}, ${reads[1]}"  
     //input ref files  
     input:
-        tuple val(sample_id),path(reads)
+        tuple val(sample_id), path(reads)
         path fastaFile
         path fastaIndex
         path gatkResource    
