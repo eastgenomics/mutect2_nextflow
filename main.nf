@@ -7,5 +7,5 @@ workflow{
     read_pairs_ch = Channel
                 .fromFilePairs(params.bam_files,size: 2)
     //run TNHaplotyper2 process from TNHaplotyper2 module
-    TNHaplotyper2(read_pairs_ch, params.fastaFile, params.fastaIndex,params.gatkResource)
+    TNHaplotyper2(read_pairs_ch,params.fastaFile,params.fastaIndex,params.gatkResource)
    }
