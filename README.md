@@ -10,7 +10,6 @@ Calls the module and runs the workflow
 Contains module for mutect2 
 ### bin folder
 Contains the source code, sentieon package (sentieon-genomics-202112.07) and sentieon licence
-
 ### To build mutect2_nextflow on DNAnexus
 ```
  git clone <repo>
