@@ -2,6 +2,7 @@ nextflow.enable.dsl=2
 //include TNHaplotyper2 module
 include { TNHaplotyper2 } from './modules/TNHaplotyper2'
 //run workflow
+
 workflow{
     //create bam and bam.bai file pairs into nextflow channel
     read_pairs_ch = Channel
